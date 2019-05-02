@@ -13,10 +13,6 @@ node {
 
   }
 
+  junit 'target/surefire-reports/*.xml'
+
 }
-  // you should add a test report here
-  post {
-          always {
-              junit 'target/surefire-reports/*.xml'
-          }
-      }
